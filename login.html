@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+function validateform(){
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+
+if (name!="lti"){
+  alert("Error");
+  return false;
+}else if(password!="123"){
+  alert("Error");
+  return false;
+  }
+}
+</script>
+<body>
+<center>
+<b>Student login form</b><br><br>
+<form name="myform" method="post" action="hello.html" onsubmit="return validateform()" >
+Name: <input type="text" name="name"><br><br>
+Password: <input type="password" name="password"><br><br>
+    <input type="Checkbox" checked="checked">Remember me<br><br>
+<input type="submit" value="login">
+</form>
+</center>
+</body>
+</html>
